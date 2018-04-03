@@ -3,12 +3,18 @@
 using namespace std;
 
 int main()
-{    
-    int number;
+{
+    int number, i;
 
-    cout << "Enter an integer: ";
+    cout << "Enter a positive integer: ";
     cin >> number;
 
-    cout << "You entered " << number;    
+    cout << "Factors of " << number << " are: " << endl;  
+    for(i = 1; i <= number; ++i)
+    {
+        if(number % i == 0)
+            cout << i << endl;
+    }
+
     return 0;
 }
