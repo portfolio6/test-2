@@ -1,0 +1,30 @@
+
+Setting up Git
+download Git and install the program with all defaults, except for the following tweaks:
+
+After adjusting your path environment screen, 
+select Use Git and optional Unix tools from the Windows command prompt. 
+This option gives us Secure Shell and other useful utilities from our PowerShell console.
+On the Configuring the line ending conversions screen, select Checkout Windows-style, 
+commit Unix-style line endings. This option makes the Git-tracked 
+source code play well with OS X and Linux systems should the need arise.
+On the Configuring the terminal emulator to use with Git Bash screen, 
+select Use Windows' default console window. This option loads our cmd.exe and 
+powershell.exe environments with maximum flexibility with Git.
+Adjusting the Git configuration
+After installation, Mike and Jessica opened an elevated PowerShell 
+console -- right-click the PowerShell icon and select Run as Administrator 
+from the shortcut menu -- and run git --version to verify installation:
+
+git --version
+
+git version 2.7.3.windows.1
+
+modify their Git configuration, notifying the tool of their user name and email address.
+Here's Mike's code: EX
+
+git config –-global user.name "Mike Love"
+
+git config --global user.email "mike@yyz.com"
+
+git config -l
